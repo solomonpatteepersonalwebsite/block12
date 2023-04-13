@@ -1,0 +1,75 @@
+/*for the sizings*/
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-9 {width: 75%;}
+
+@media only screen and (max-width: 1680px) {
+    /* For desktop: */
+    [class*="col-6"] {
+      display: flex;
+      width: 100%;
+    }
+    html{
+       background-image: linear-gradient(120deg, #0e114f 0%, #433df8 74%);
+    }
+      
+      body{
+          background-color: #01025a;
+      }
+      #loe{
+        size: 12px;
+        text-size-adjust: 12px;
+        -webkit-text-size-adjust: 12px;
+        -moz-text-size-adjust: 12px;
+        -ms-text-size-adjust: 12px;
+        -o-text-size-adjust: 12px;
+        -khtml-text-size-adjust: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    [class*="col-5"] {
+        display: flex;
+      width: 100%;
+    }
+    body {
+      background-color:rgb(71, 157, 255);
+    }
+    html{
+      background-image: linear-gradient(315deg, #858dff 0%, #1d045d 74%);
+      font-size: large;
+      z-index: 2;
+    }
+    p{
+        font-size: large;
+    }
+    #loe{
+        size: 12px;
+        text-size-adjust: 12px;
+        -webkit-text-size-adjust: 12px;
+        -moz-text-size-adjust: 12px;
+        -ms-text-size-adjust: 12px;
+        -o-text-size-adjust: 12px;
+        -khtml-text-size-adjust: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    [class*="col-9"] 
+    {
+        display: flex;
+        width: 100%;
+    }
+    #loe{
+        size: 12px;
+        text-size-adjust: 12px;
+        -webkit-text-size-adjust: 12px;
+        -moz-text-size-adjust: 12px;
+        -ms-text-size-adjust: 12px;
+        -o-text-size-adjust: 12px;
+        -khtml-text-size-adjust: 12px;
+    }
+}
+
+
+
