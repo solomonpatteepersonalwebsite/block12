@@ -1,0 +1,199 @@
+/*for the sizings*/
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-9 {width: 75%;}
+
+@media only screen and (max-width: 1680px) {
+    /* For desktop: */
+    [class*="col-6"] {
+      display: flex;
+      width: 100%;
+    }
+    html{
+      font-family: "ubuntu";
+       background-image: linear-gradient(120deg, #0d0e28 0%, #433df8 74%);
+       color : white;
+       background-color: darkblue;
+    }
+    #ThePcs li a{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #ThePcs li a img{
+      width: 560px;
+    }
+    img{
+      height: 500px;
+    }
+      body{
+          background-color: #01025a;
+      }
+      #loe{
+        width: 50%;
+        display: inline;
+
+        size: 12px;
+        text-size-adjust: 12px;
+        -webkit-text-size-adjust: 12px;
+        -moz-text-size-adjust: 12px;
+        -ms-text-size-adjust: 12px;
+        -o-text-size-adjust: 12px;
+        -khtml-text-size-adjust: 12px;
+      }
+      nav{
+        background-image: linear-gradient(120deg, #0006ab 0%, #8082ff 74%);
+        font-size: x-large;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+      }
+      nav a{
+        color: aquamarine;
+      }
+
+      /**/
+
+      @font-face {
+        font-family: "ubuntu";
+        font-style: italic;
+        font-weight: 300;
+        src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+      }
+      
+      .animate-charcter {
+        text-align: center;
+      }
+
+      h1 .animate-charcter{
+        text-transform: uppercase;
+        background-image: linear-gradient(
+          -225deg,
+          #22073c 0%,
+          #1707a1 29%,
+          #493fff 67%,
+          #49bbfd 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        /* text-fill-color: transparent; */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+            font-size: 190px;
+      }
+      
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+    [class*="col-5"] {
+        display: flex;
+      width: 100%;
+    }
+    body {
+      background-color:rgb(71, 157, 255);
+    }
+    html{
+      font-family: "ubuntu";
+      background-image: linear-gradient(315deg, #858dff 0%, #1d045d 74%);
+      font-size: large;
+      z-index: 2;
+    }
+    p{
+        font-size: large;
+    }
+    #loe{
+        size: 12px;
+        text-size-adjust: 12px;
+        -webkit-text-size-adjust: 12px;
+        -moz-text-size-adjust: 12px;
+        -ms-text-size-adjust: 12px;
+        -o-text-size-adjust: 12px;
+        -khtml-text-size-adjust: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    [class*="col-9"] 
+    {
+        display: flex;
+        width: 100%;
+    }
+    nav span{
+      background: linear-gradient(to right, #989898 10%, #ededed 50%, #79b697 60%);
+      font-size: x-large;
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      padding: 0px, 10px;
+    }
+    nav span a{
+      color: rgb(16, 86, 63);
+    }
+    #loe{
+        size: 12px;
+        text-size-adjust: 12px;
+        -webkit-text-size-adjust: 12px;
+        -moz-text-size-adjust: 12px;
+        -ms-text-size-adjust: 12px;
+        -o-text-size-adjust: 12px;
+        -khtml-text-size-adjust: 12px;
+        font-size: larger;
+    }
+
+    @font-face {
+      font-family: "ubuntu";
+      font-style: italic;
+      font-weight: 300;
+      src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #353535;
+      font-family: "ubuntu", Arial, sans-serif;
+      overflow-x: hidden;
+      display: grid;
+      place-items: center;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #9ca0b1;
+    }
+    
+    .wrapper {
+      text-align: center;
+    }
+    .wrapper h1 {
+      color: #fff;
+      font-size: 92px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "Josefin Sans", sans-serif;
+     
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 1.5s linear infinite;
+      display: inline-block;
+    }
+}
+
+
+
