@@ -12,7 +12,7 @@ websites and web applications using the MERN Stack. I am also a full stack devel
 
 let words2 = `Here you can find a list of my projects, my resume, and my contact information.`
 
-let Summ = `>SUMMARY
+let Summ = `
 Creative and friendly Junior Full Stack Software Engineer with a strong attention
 to detail and a proactive attitude. Proficient in HTML, CSS, JavaScript, NodeJS,
 React and C#. Experience with web applications and game development.
@@ -40,16 +40,36 @@ function typeWriter() {
       i++;
       setTimeout(typeWriter, speed);
     }
-    else if (i < words2.length) {
+    if (i < words2.length) {
       loen.textContent += words2.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
     }
-    else if (i < Summ.length) {
+    if (i < Summ.length) {
       loe2.textContent += Summ.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
     }
   }
+  const form = document.querySelector("#form")
+  const submitButton = document.querySelector("#submit")
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxLZTlgHBunzjDAyvzTFB9AAQZS2vGT4hSZKlfMDVMQrrHEQwKDYO2-fo05BNfFegYWVg/exec'
 
+  form.addEventListener('submit', e => {
+    submitButton.disabled = true
+    e.preventDefault()
+    let requestBody = new FormData(form)
+    fetch(scriptURL, { method: 'POST', body: requestBody})
+      .then(response => {
+         alert('Success!', response)
+         submitButton.disabled = false
+        })
+      .catch(error => {
+      alert('Error!', error.message)
+        submitButton.disabled = false
+
+      }
+      )
+  })
+  
 typeWriter();
