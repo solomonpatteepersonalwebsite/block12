@@ -21,10 +21,11 @@
       justify-content: space-between;
     }
     #ThePcs li a img{
-      width: 560px;
+      width: 300px;
+      padding-left: 29%;
     }
     img{
-      height: 500px;
+      width: 300px;
     }
       body{
           background-color: #01025a;
@@ -48,11 +49,22 @@
         display: flex;
         text-align: center;
         justify-content: space-evenly;
+        word-spacing: 2vi;
       }
+      
       nav a{
         color: aquamarine;
       }
 
+      nav a:hover{
+        color: rgb(123, 0, 255);
+      }
+      iframe{
+        display: flex;
+        width: 300px;
+        border: none;
+        padding-left: 29%;
+      }
       /**/
 
       @font-face {
@@ -61,38 +73,6 @@
         font-weight: 300;
         src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
       }
-      
-      .animate-charcter {
-        text-align: center;
-      }
-
-      h1 .animate-charcter{
-        text-transform: uppercase;
-        background-image: linear-gradient(
-          -225deg,
-          #22073c 0%,
-          #1707a1 29%,
-          #493fff 67%,
-          #49bbfd 100%
-        );
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        /* text-fill-color: transparent; */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 2s linear infinite;
-        display: inline-block;
-            font-size: 190px;
-      }
-      
-      @keyframes textclip {
-        to {
-          background-position: 200% center;
-        }
-      }
   }
 
   @media only screen and (max-width: 768px) {
@@ -100,12 +80,15 @@
         display: flex;
       width: 100%;
     }
+    img{
+      width: 48vh;
+    }
     body {
-      background-color:rgb(71, 157, 255);
+      background-color:rgb(56, 56, 56);
     }
     html{
+      background-image: none;
       font-family: "ubuntu";
-      background-image: linear-gradient(315deg, #858dff 0%, #1d045d 74%);
       font-size: large;
       z-index: 2;
     }
@@ -121,6 +104,16 @@
         -o-text-size-adjust: 12px;
         -khtml-text-size-adjust: 12px;
     }
+    nav a:hover{
+      color: rgb(123, 147, 255);
+    }
+    iframe{
+      display: flex;
+      width: 45%;
+      border: none;
+      padding: auto;
+      padding-left: auto;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -129,16 +122,26 @@
         display: flex;
         width: 100%;
     }
+    img{
+      width: 42vh;
+    }
+    nav{
+      background-image: none;
+    };
     nav span{
-      background: linear-gradient(to right, #989898 10%, #ededed 50%, #79b697 60%);
       font-size: x-large;
       display: flex;
       text-align: center;
       justify-content: space-evenly;
-      padding: 0px, 10px;
+      word-spacing: 2vi;
+      background-image: none;
+      z-index: 1;
+    }
+    nav a:hover{
+      color: rgb(0, 255, 221);
     }
     nav span a{
-      color: rgb(16, 86, 63);
+      color: rgb(39, 70, 206);
     }
     #loe{
         size: 12px;
@@ -149,6 +152,10 @@
         -o-text-size-adjust: 12px;
         -khtml-text-size-adjust: 12px;
         font-size: larger;
+    }
+
+    #ThePcs li a img{
+      width: 85%;
     }
 
     @font-face {
@@ -166,6 +173,7 @@
       overflow-x: hidden;
       display: grid;
       place-items: center;
+      background-image: none;
     }
     
     a {
@@ -173,26 +181,11 @@
       color: #9ca0b1;
     }
     
-    .wrapper {
-      text-align: center;
-    }
-    .wrapper h1 {
-      color: #fff;
-      font-size: 92px;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-family: "Josefin Sans", sans-serif;
-     
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      color: #fff;
-      background-clip: text;
-      /* text-fill-color: transparent; */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 1.5s linear infinite;
-      display: inline-block;
+    iframe{
+      display: flex;
+      width: 84%;
+      border: none;
+      padding-left: 0%;
     }
 }
 
